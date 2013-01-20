@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<mateconfschemafile>
+  <schemalist>
+    <schema>
+      <key>/schemas/apps/battery_status/first_run</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/first_run</applyto>
+      <type>bool</type>
+      <default>true</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Option for first run</short>
+        <long>Allows detect first run of battery-status</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/icon_policy</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/icon_policy</applyto>
+      <type>string</type>
+      <default>always</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>When to show the applet icon</short>
+        <long>Display options for the notification icon. Valid options are "never", "low", "charge" and "always".</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/lock_screen</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/lock_screen</applyto>
+      <type>bool</type>
+      <default>true</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Lock screen on suspend/hibernate</short>
+        <long>Lock screen when system is going suspend/hibernate via applet</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/show_info</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/show_info</applyto>
+      <type>bool</type>
+      <default>false</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Additional frame in Battery Information dialog</short>
+        <long>Additional frame in Battery Information dialog with static technical battery information</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/show_tooltip</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/show_tooltip</applyto>
+      <type>bool</type>
+      <default>true</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Show tooltip</short>
+        <long>Show mate-power-manager's tray icon-like tooltip on mouse hover</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/show_status</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/show_status</applyto>
+      <type>bool</type>
+      <default>true</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Show status instead "-:--"</short>
+        <long>Show battery status when battery lifetime/chargetime not available</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/power_source_sensitive</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/power_source_sensitive</applyto>
+      <type>bool</type>
+      <default>false</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Show current power source in statistics dialog</short>
+        <long>Show information about current power source device instead of selected at last time in statistics dialog.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/show_sleep</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/show_sleep</applyto>
+      <type>bool</type>
+      <default>false</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Allow sleep actions in the menu</short>
+        <long>Show sleep actions (Suspend/Hibernate) in the main menu.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/show_session</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/show_session</applyto>
+      <type>bool</type>
+      <default>false</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Allow session actions in the menu</short>
+        <long>Show mate-session actions (log out and shutdown) in the main menu.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/show_power</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/show_power</applyto>
+      <type>bool</type>
+      <default>true</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Allow mate-power-manager integration in the menu</short>
+        <long>Show mate-power-manager related items in the main menu.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/show</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/show</applyto>
+      <type>string</type>
+      <default>icon</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Type of showing information</short>
+        <long>Type of showing information in battery applet. Possible values are "icon", "time" and "percent".</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/text</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/text</applyto>
+      <type>string</type>
+      <default>small</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Text size of showing information</short>
+        <long>Text size of showing information in battery applet. Possible values are "medium"(normal) and "small".</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/percentage_low</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/percentage_low</applyto>
+      <type>int</type>
+      <default>8</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Critically low percentage</short>
+        <long>The percentage of the battery for showing warning message dialog; "-1" for disable.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/timer</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/timer</applyto>
+      <type>int</type>
+      <default>60</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Time of showing warning message dialog</short>
+        <long>Time (in seconds) of showing warning message dialog about battery critical charge; "-1" for disable message itself, "1" for disable timer.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/show_powermode</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/show_powermode</applyto>
+      <type>bool</type>
+      <default>true</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Allows show CPU frequency mode in menu</short>
+        <long>Shows CPU frequency mode in menu and allows to change it.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/show_textsize</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/show_textsize</applyto>
+      <type>bool</type>
+      <default>false</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Allows show Text Size setting in menu</short>
+        <long>Shows Text Size setting in menu right next to Show setting.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/show_settings</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/show_settings</applyto>
+      <type>bool</type>
+      <default>true</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Allows show settings in menu</short>
+        <long>Shows "Show" and "Text Size" settings in menu.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/reduce_hours</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/reduce_hours</applyto>
+      <type>bool</type>
+      <default>false</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Allows to reduce hours in applet's text</short>
+        <long>Reduce hours in applet's text, if its equals to "0" (e.g., ":10" instead "0:10").</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/powermode_as_submenu</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/powermode_as_submenu</applyto>
+      <type>bool</type>
+      <default>false</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Allows to show available CPU frequency scaling modes in submenu</short>
+        <long>Allows to show available CPU frequency scaling modes in separate submenu.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/battery_status/power_manager</key>
+      <owner>battery-status</owner>
+      <applyto>/apps/battery_status/power_manager</applyto>
+      <type>bool</type>
+      <default>false</default>
+      <gettext_domain>battery-status</gettext_domain>
+      <locale name="C">
+        <short>Allows to change mate-power-manager settings</short>
+        <long>Allows to change mate-power-manager settings according to current CPU frequency mode.</long>
+      </locale>
+    </schema>
+
+  </schemalist>
+</mateconfschemafile>
