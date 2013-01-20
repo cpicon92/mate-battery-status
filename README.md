@@ -63,6 +63,7 @@ From main menu user (by default) can get access to:
  - Text Size setting
  - CPU frequency scaling (provided by cpufreq-applet)
  - Power Management preferences (provided by mate-power-manager)
+ 
 From context menu (by clicking right mouse button at applet) user can get
 access to:
 
